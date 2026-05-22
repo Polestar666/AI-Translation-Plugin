@@ -1,4 +1,5 @@
 # 翻译助手工具介绍使用说明
+
 ## 1. 工具简介
 
 `翻译助手 MVP` 是一个基于 **Chrome Manifest V3** 开发的浏览器翻译插件，当前版本已经具备以下核心能力：
@@ -13,6 +14,7 @@
 该工具通过 **OpenAI 兼容的 Chat Completions 接口** 完成翻译请求，因此不仅可以接入 OpenAI，也可以接入兼容该接口格式的其他模型服务。
 
 ---
+
 ## 2. 项目结构分析
 
 当前项目目录如下：
@@ -205,6 +207,17 @@ D:\翻译
 ---
 
 ## 4. 当前版本已实现功能
+
+### 4.0 界面示例
+
+#### Popup 配置界面
+
+![Popup 配置界面](<img width="525" height="749" alt="image" src="https://github.com/user-attachments/assets/6530ddce-ee95-42d1-832c-f3f941709b5e" />)
+
+
+#### 网页划词翻译效果
+
+![网页划词翻译效果](<img width="1006" height="560" alt="image" src="https://github.com/user-attachments/assets/74021aab-e04e-4116-9f26-1270e9e4bfb4" />)
 
 ### 4.1 基础设置
 

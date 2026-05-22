@@ -212,12 +212,12 @@ D:\翻译
 
 #### Popup 配置界面
 
-![Popup 配置界面](<img width="525" height="749" alt="image" src="https://github.com/user-attachments/assets/6530ddce-ee95-42d1-832c-f3f941709b5e" />)
+<img width="525" height="749" alt="image" src="https://github.com/user-attachments/assets/6530ddce-ee95-42d1-832c-f3f941709b5e" />
 
 
 #### 网页划词翻译效果
 
-![网页划词翻译效果](<img width="1006" height="560" alt="image" src="https://github.com/user-attachments/assets/74021aab-e04e-4116-9f26-1270e9e4bfb4" />)
+<img width="1006" height="560" alt="image" src="https://github.com/user-attachments/assets/74021aab-e04e-4116-9f26-1270e9e4bfb4" />
 
 ### 4.1 基础设置
 

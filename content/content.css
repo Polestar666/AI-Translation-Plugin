@@ -1,0 +1,83 @@
+#selection-translator-root.selection-translator {
+  position: fixed;
+  z-index: 2147483647;
+  width: min(360px, calc(100vw - 24px));
+  padding: 14px;
+  border: 1px solid rgba(21, 28, 45, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 24px 60px rgba(17, 24, 39, 0.18);
+  color: #0f172a;
+  font: 14px/1.55 "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  backdrop-filter: blur(14px);
+}
+
+#selection-translator-root[hidden] {
+  display: none;
+}
+
+#selection-translator-root .selection-translator__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+#selection-translator-root .selection-translator__eyebrow {
+  margin: 0 0 4px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+#selection-translator-root .selection-translator__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+#selection-translator-root .selection-translator__close {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
+  color: #334155;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#selection-translator-root .selection-translator__meta {
+  margin: 0;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#selection-translator-root .selection-translator__source {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+#selection-translator-root .selection-translator__body {
+  margin-top: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #0f172a;
+}
+
+#selection-translator-root[data-state="loading"] .selection-translator__body {
+  color: #475569;
+}
+
+#selection-translator-root[data-state="error"] .selection-translator__meta,
+#selection-translator-root[data-state="error"] .selection-translator__body {
+  color: #b91c1c;
+}

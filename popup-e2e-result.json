@@ -1,0 +1,12 @@
+{
+  "popup_title": "翻译助手",
+  "missing_key_status": "请先填写 API Key。",
+  "save_status": "设置已保存。",
+  "persisted_base_url": "http://127.0.0.1:8787/v1",
+  "persisted_model": "mock-model",
+  "persisted_api_key": "mock-key",
+  "translation_output": "【MOCK翻译】Hello, world!",
+  "translation_status": "翻译完成，目标语言：简体中文。",
+  "request_count": 1,
+  "request_model": "mock-model"
+}

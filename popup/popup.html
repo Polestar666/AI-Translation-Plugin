@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>翻译助手 MVP</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="hero">
+        <p class="eyebrow">Chrome Extension · MVP</p>
+        <h1>翻译助手</h1>
+        <p class="hero-copy">先跑通 popup 翻译链路，兼容 OpenAI / DeepSeek 一类 Chat Completions 接口。</p>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>基础设置</h2>
+          <button id="saveSettingsButton" class="ghost-button" type="button">保存设置</button>
+        </div>
+
+        <div class="field-grid">
+          <label class="field">
+            <span>API Key</span>
+            <input id="apiKey" type="password" placeholder="请输入你的 API Key" autocomplete="off" />
+          </label>
+
+          <label class="field field-wide">
+            <span>API Base URL</span>
+            <input id="baseUrl" type="url" placeholder="https://api.openai.com/v1" autocomplete="off" />
+          </label>
+
+          <label class="field">
+            <span>Model</span>
+            <input id="model" type="text" placeholder="gpt-4o-mini / deepseek-chat" autocomplete="off" />
+          </label>
+
+          <label class="field">
+            <span>目标语言</span>
+            <select id="targetLanguage">
+              <option value="简体中文">简体中文</option>
+              <option value="English">English</option>
+              <option value="日本語">日本語</option>
+              <option value="한국어">한국어</option>
+              <option value="Français">Français</option>
+              <option value="Deutsch">Deutsch</option>
+              <option value="Español">Español</option>
+              <option value="Русский">Русский</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="hint">默认按 OpenAI 兼容接口请求：<code>/chat/completions</code>，源语言自动识别。</p>
+      </section>
+
+      <form id="translateForm" class="panel translate-panel">
+        <div class="panel-header">
+          <h2>输入翻译</h2>
+          <div class="action-row">
+            <button id="translatePageButton" class="ghost-button" type="button">整页翻译</button>
+            <button id="restorePageButton" class="ghost-button" type="button">恢复原文</button>
+            <button id="translateButton" class="primary-button" type="submit">翻译文本</button>
+          </div>
+        </div>
+
+        <label class="field field-wide">
+          <span>待翻译文本</span>
+          <textarea id="sourceText" rows="6" placeholder="输入或粘贴需要翻译的文本"></textarea>
+        </label>
+      </form>
+
+      <section class="panel result-panel">
+        <div class="panel-header">
+          <h2>译文</h2>
+          <span class="status-dot" aria-hidden="true"></span>
+        </div>
+
+        <textarea id="translatedText" rows="6" readonly placeholder="翻译结果会显示在这里"></textarea>
+        <p id="statusMessage" class="status-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

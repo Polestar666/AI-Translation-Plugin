@@ -1,0 +1,11 @@
+{
+  "popup_status_after_translate": "整页翻译已开始，请回到网页等待内容更新。",
+  "translated_h1": "【PAGE-MOCK】Welcome to the translation demo page",
+  "translated_p1": "【PAGE-MOCK】This browser extension should translate the full article body and then restore it.",
+  "overlay_meta": "整页翻译完成 · 简体中文",
+  "request_count_after_translate": 4,
+  "popup_status_after_restore": "网页原文已恢复。",
+  "restored_h1": "Welcome to the translation demo page",
+  "restored_p1": "This browser extension should translate the full article body and then restore it.",
+  "request_model": "mock-model"
+}

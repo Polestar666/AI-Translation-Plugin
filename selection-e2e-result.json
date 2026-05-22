@@ -1,0 +1,10 @@
+{
+  "overlay_visible": true,
+  "overlay_meta": "已翻译为 简体中文",
+  "overlay_body": "【MOCK翻译】Hello selected text for browser translation verification.",
+  "request_count": 1,
+  "request_model": "mock-model",
+  "overlay_hidden_after_escape": true,
+  "shortcut_overlay_visible": true,
+  "request_count_after_shortcut": 2
+}

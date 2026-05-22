@@ -13,9 +13,6 @@
 该工具通过 **OpenAI 兼容的 Chat Completions 接口** 完成翻译请求，因此不仅可以接入 OpenAI，也可以接入兼容该接口格式的其他模型服务。
 
 ---
-<img width="535" height="746" alt="image" src="https://github.com/user-attachments/assets/2b0cb48e-eb38-42db-831a-94f67fd8f1cf" />
-<img width="1197" height="644" alt="image" src="https://github.com/user-attachments/assets/fd828336-6ff3-40a9-9f37-42ad69dd9d1b" />
----
 ## 2. 项目结构分析
 
 当前项目目录如下：
